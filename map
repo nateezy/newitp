@@ -1,10 +1,27 @@
-<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
-<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Welcome</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" 
+          href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" /> 
+</head>
 
- <div id="cocohead"></div>
+<body>
+Hello <span id="world">World!</span>
+    <div id="cocohead" style="width: 700px; height: 500px"></div>
  
- #cocohead { height: 180px; }
- 
- var mymap = L.map('cocohead').setView([51.505, -0.09], 13);
- 
- 
+    <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+
+    <script>
+        var cocohead = L.map('cocohead').setView([0, 0], 2);
+        L.tileLayer('slip/{z}/{x}/{y}.png', {
+            minZoom: 1,
+            maxZoom: 6,
+            attribution: 'ESO/INAF-VST/OmegaCAM', 'nirnpowers'
+            tms: true
+        }).addTo(cocohead);
+    </script>
+</body>
+</html>
