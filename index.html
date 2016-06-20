@@ -38,7 +38,7 @@
   var map = L.map('map').setView([42.35, -71.08], 13);</p>
 
 <p>// load a tile layer
-  L.tileLayer('cocohead.jpeg',
+  L.tileLayer('cocohead.jpg',
     {
       attribution: 'Tiles by <a href="http://mapc.org">MAPC</a>, Data by <a href="http://mass.gov/mgis">MassGIS</a>',
       maxZoom: 17,
@@ -47,7 +47,7 @@
 
 <p>
   // base map
-L.tileLayer('<a href="http://tiles.mapc.org/basemap/%7Bz%7D/%7Bx%7D/%7By%7D.png">http://tiles.mapc.org/basemap/{z}/{x}/{y}.png</a>',
+L.tileLayer('cocohead.jpg',
 {
   attribution: 'Tiles by <a href="http://mapc.org">MAPC</a>,
     Data by <a href="http://mass.gov/mgis">MassGIS</a>',
@@ -56,7 +56,7 @@ L.tileLayer('<a href="http://tiles.mapc.org/basemap/%7Bz%7D/%7Bx%7D/%7By%7D.png"
 }).addTo(map);</p>
 
 <p>// bike lanes
-L.tileLayer('cocohead.jpeg',
+L.tileLayer('cocohead.jpg',
 {
   maxZoom: 17,
   minZoom: 9
